@@ -12,6 +12,44 @@
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
+
+        @media only screen and (max-width: 760px) {
+            table[class=devicewidth] {
+                width: 440px!important;
+            }
+            table[class=deviceinner] {
+                width: 420px;
+            }
+            table[class=deviceborder] {
+                width: 420px;
+                border-right-width: 0!important;
+                padding-right: 15px!important;
+                padding-left: 15px!important;
+                text-align: center!important;
+            }
+            .buttonwidth {
+                width: 50%!important;  
+            }
+            table[class=tablewidth] {
+                width: 288px!important;
+                margin-bottom: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            table[class=devicewidth] {
+                width: 300px!important;
+            }
+            table[class=deviceinner] {
+                width: 280px;
+            }
+            table[class=deviceborder] {
+                width: 280px;
+            }
+            .buttonwidth {
+                width: 50%!important;  
+            }
+        }
     </style>
 </head>
 <body>
@@ -19,12 +57,12 @@
        <tbody>
             <tr>
                 <td width="100%">
-                    <table width="680" bgcolor="ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 43px; padding-bottom: 24px;">
+                    <table width="680" bgcolor="ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 43px; padding-bottom: 24px;" class="devicewidth">
                         <tbody>
                             <tr>
                                 <td>
                                     <!-- LOGO -->
-                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" class="deviceinner">
                                         <tbody>
                                             <tr>
                                                 <td align="center" style="padding-bottom: 24px;">
@@ -34,7 +72,7 @@
                                         </tbody>
                                     </table>
                                     <!-- TITLE -->
-                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-bottom: 16px;">
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-bottom: 16px;" class="deviceinner">
                                         <tbody>
                                             <tr>
                                                 <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 400; line-height: 28px; color: #4A5566;">
@@ -44,16 +82,16 @@
                                         </tbody>
                                     </table>
                                     <!-- COUPON -->
-                                    <table bgcolor="#F8F8FA" width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 24px; padding-bottom: 24px;">
+                                    <table bgcolor="#F8F8FA" width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 24px; padding-bottom: 24px;" class="deviceinner">
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <table width="512" cellpadding="0" cellspacing="0" border="0" align="center">
+                                                    <table width="512" cellpadding="0" cellspacing="0" border="0" align="center" class="deviceinner">
                                                         <tbody>
                                                             <tr>
                                                                 <td>
                                                                      <!-- COUPON-left -->
-                                                                    <table width="184" cellpadding="0" cellspacing="0" border="0" align="left" style="padding-right: 24px; border-right-width: 1px; border-right-style: dashed; border-right-color: #8492A6; text-align: center;">
+                                                                    <table width="184" cellpadding="0" cellspacing="0" border="0" align="left" style="padding-right: 24px; border-right-width: 1px; border-right-style: dashed; border-right-color: #8492A6; text-align: center;" class="deviceborder">
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td width="160" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 4px;">Coupon:</td>
@@ -63,7 +101,7 @@
                                                                             </tr>
                                                                             <tr>
                                                                                 <td width="160">
-                                                                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; background: #0052E2; border-radius: 4px; color: #ffffff; text-decoration: none; height: 32px; line-height: 32px; display: inline-block; width: 100%;">Redeem coupon</a>
+                                                                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; background: #0052E2; border-radius: 4px; color: #ffffff; text-decoration: none; height: 32px; line-height: 32px; display: inline-block; width: 100%;" class="buttonwidth">Redeem coupon</a>
                                                                                 </td>
                                                                             </tr>
                                                                         </tbody>
@@ -79,7 +117,7 @@
                                                                         </tbody>
                                                                     </table>
                                                                      <!-- COUPON-right -->
-                                                                    <table width="327" height="128" cellpadding="0" cellspacing="0" border="0" align="left" align="left" style="padding-left: 24px">
+                                                                    <table width="327" height="128" cellpadding="0" cellspacing="0" border="0" align="left" align="left" style="padding-left: 24px" class="deviceborder">
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td width="327" style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; line-height: 28px; font-weight: 400; color: #8492A6;">
@@ -96,8 +134,136 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <!-- PRICE -->
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 24px; padding-bottom: 24px;" class="deviceinner">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table width="176" cellpadding="0" cellspacing="0" border="0" align="left" style="border-width: 1px; border-style: solid; border-color: #E1E1EA; border-radius: 4px; text-align: center; padding-top: 24px; padding-bottom: 24px; padding-left: 19px; padding-right: 19px;" class="tablewidth">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; line-height: 28px; color: #4A5566; padding-bottom: 24px;">Basic</h2>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Storage 2 GB</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">_</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">_</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; line-height: 30px; color: #4A5566; padding-bottom: 24px;">$0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; color: #8492A6; padding-bottom: 24px;">user/month</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 48px; color: #FFFFFF; background: #0052E2; border-radius: 4px; text-decoration: none; display: inline-block; width: 138px; height: 48px">Get started</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="10" height="16" cellpadding="0" cellspacing="0" border="0" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="176" cellpadding="0" cellspacing="0" border="0" align="left" style="border-width: 1px; border-style: solid; border-color: #0052E2; border-radius: 4px; text-align: center; padding-top: 24px; padding-bottom: 24px; padding-left: 19px; padding-right: 19px;" class="tablewidth">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; line-height: 28px; color: #4A5566; padding-bottom: 24px;">Premium</h2>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Storage 2 GB</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Device approvals</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">_</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; line-height: 30px; color: #4A5566; padding-bottom: 24px;">$19</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; color: #8492A6; padding-bottom: 24px;">user/month</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 48px; color: #FFFFFF; background: #0052E2; border-radius: 4px; text-decoration: none; display: inline-block; width: 138px; height: 48px">Get started</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="10" height="16" cellpadding="0" cellspacing="0" border="0" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table width="176" cellpadding="0" cellspacing="0" border="0" align="left" style="border-width: 1px; border-style: solid; border-color: #E1E1EA; border-radius: 4px; text-align: center; padding-top: 24px; padding-bottom: 24px; padding-left: 19px; padding-right: 19px;" class="tablewidth">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 700; line-height: 28px; color: #4A5566; padding-bottom: 24px;">Ultimate</h2>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Storage 2 GB</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">Device approvals</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 22px; color: #8492A6; padding-bottom: 24px;">File requests</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; line-height: 30px; color: #4A5566; padding-bottom: 24px;">$39</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; color: #8492A6; padding-bottom: 24px;">user/month</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 48px; color: #FFFFFF; background: #0052E2; border-radius: 4px; text-decoration: none; display: inline-block; width: 138px; height: 48px">Get started</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                     <!-- TEXT -->
-                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 16px;">
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-top: 16px;" class="deviceinner">
                                         <tbody>
                                             <tr>
                                                 <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; font-weight: 400; color: #8492A6;">
@@ -107,7 +273,7 @@
                                         </tbody>
                                     </table>
                                     <!-- CHECK -->
-                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-bottom: 16px; margin-top: 30px;">
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="padding-bottom: 16px; margin-top: 30px;" class="deviceinner">
                                         <tbody>
                                             <tr>
                                                 <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 21px; font-weight: 400; line-height: 28px; color: #4A5566;">
@@ -174,7 +340,7 @@
                                         </tbody>
                                     </table>
                                     <!-- FOOTER -->
-                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="border-top-width: 1px; border-style: solid; border-color: #EDEDF2; margin-top: 64px; padding-top: 16px">
+                                    <table width="560" cellpadding="0" cellspacing="0" border="0" align="center" style="border-top-width: 1px; border-style: solid; border-color: #EDEDF2; margin-top: 64px; padding-top: 16px" class="deviceinner">
                                         <tfoot>
                                            <tr>
                                                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 16px; font-weight: 400; color: #8492A6;">
